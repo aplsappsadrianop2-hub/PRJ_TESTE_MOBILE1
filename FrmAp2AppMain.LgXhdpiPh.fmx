@@ -1,0 +1,54 @@
+inherited FrmAppMain_LgXhdpiPh: TFrmAppMain_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited ScrollBox1: TScrollBox
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    Viewport.Width = 50.000000000000000000
+    Viewport.Height = 50.000000000000000000
+    inherited Label1: TLabel
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      inherited SpeedButton1: TSpeedButton
+        Size.Height = 23.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited TabControl1: TTabControl
+      Sizes = (
+        629s
+        407s
+        629s
+        407s
+        629s
+        407s)
+      inherited TabItem1: TTabItem
+        Size.Width = 80.000000000000000000
+        ExplicitSize.cx = 64.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited MemoResultado: TMemo
+          Viewport.Width = 629.000000000000000000
+          Viewport.Height = 304.000000000000000000
+        end
+        inherited Panel1: TPanel
+          inherited edtHttp: TEdit
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          inherited edtUrl: TEdit
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+      end
+      inherited TabItem2: TTabItem
+        Size.Width = 127.000000000000000000
+        ExplicitSize.cx = 64.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+      inherited TabItemImagem: TTabItem
+        Size.Width = 55.000000000000000000
+        ExplicitSize.cx = 64.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+    end
+  end
+end

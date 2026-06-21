@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2026/06/04 16:17:56.000.292,=C:\Users\DESENVOLVEDOR\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/06/04 16:21:36.000.727,C:\Users\DESENVOLVEDOR\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\PROJETOS\PRJ_TESTE_MOBILE1\FrmAp2AppMain.fmx</Transaction>
+    <Transaction>2026/06/04 16:21:36.000.727,C:\Users\DESENVOLVEDOR\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\PROJETOS\PRJ_TESTE_MOBILE1\FrmAp2AppMain.pas</Transaction>
+    <Transaction>2026/06/04 16:21:44.000.024,C:\Users\DESENVOLVEDOR\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\PROJETOS\PRJ_TESTE_MOBILE1\Ap2App.dproj</Transaction>
+    <Transaction>2026/06/06 13:06:45.804,=C:\PROJETOS\PRJ_TESTE_MOBILE1\Unit1.pas</Transaction>
+    <Transaction>2026/06/06 13:18:59.167,C:\PROJETOS\PRJ_TESTE_MOBILE1\FrmAp2Image.fmx=C:\PROJETOS\PRJ_TESTE_MOBILE1\Unit1.fmx</Transaction>
+    <Transaction>2026/06/06 13:18:59.167,C:\PROJETOS\PRJ_TESTE_MOBILE1\FrmAp2Image.pas=C:\PROJETOS\PRJ_TESTE_MOBILE1\Unit1.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android="" Android64=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

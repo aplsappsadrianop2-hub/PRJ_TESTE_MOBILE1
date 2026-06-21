@@ -1,0 +1,78 @@
+inherited FrmAppMain_LgXhdpiTb: TFrmAppMain_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited ScrollBox1: TScrollBox
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    Viewport.Width = 480.000000000000000000
+    Viewport.Height = 829.000000000000000000
+    inherited Label1: TLabel
+      Align = MostTop
+      Size.Width = 474.000000000000000000
+      Size.Height = 38.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      inherited SpeedButton1: TSpeedButton
+        Align = MostRight
+        Position.X = 421.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited FloatKeyAnimation1: TFloatKeyAnimation
+        PropertyName = 'Opacity'
+      end
+    end
+    inherited TabControl1: TTabControl
+      Size.Width = 474.000000000000000000
+      Size.Height = 785.000000000000000000
+      Sizes = (
+        474s
+        736s
+        474s
+        736s
+        474s
+        736s)
+      inherited TabItem1: TTabItem
+        Size.Width = 80.000000000000000000
+        ExplicitSize.cx = 64.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited MemoResultado: TMemo
+          Size.Width = 474.000000000000000000
+          Size.Height = 633.000000000000000000
+          Viewport.Width = 474.000000000000000000
+          Viewport.Height = 633.000000000000000000
+        end
+        inherited Panel1: TPanel
+          Size.Width = 474.000000000000000000
+          inherited edtHttp: TEdit
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Size.Width = 474.000000000000000000
+          end
+          inherited edtUrl: TEdit
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Size.Width = 474.000000000000000000
+          end
+          inherited Button1: TButton
+            Size.Width = 474.000000000000000000
+          end
+        end
+      end
+      inherited TabItem2: TTabItem
+        Size.Width = 127.000000000000000000
+        ExplicitSize.cx = 64.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited edtNavegador: TEdit
+          Size.Width = 474.000000000000000000
+        end
+        inherited WebBrowser1: TWebBrowser
+          Size.Width = 474.000000000000000000
+          Size.Height = 704.000000000000000000
+        end
+      end
+      inherited TabItemImagem: TTabItem
+        Size.Width = 55.000000000000000000
+        ExplicitSize.cx = 64.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+    end
+  end
+end

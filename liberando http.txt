@@ -1,0 +1,44 @@
+Desculpe a confusão! Se você está usando o **Delphi 12.3 (Athens)**, você não encontrou essa opção porque a Embarcadero mudou a forma como isso é configurado nas versões mais recentes.
+
+Eles removeram o "Uses Cleartext Traffic" daquela listinha visual do *Entitlement List* e integraram isso diretamente nas opções de compilação do Android.
+
+Para liberar o tráfego `http://` no Delphi 12.3, o caminho correto agora é este:
+
+---
+
+### O Novo Caminho no Delphi 12.3
+
+1. No menu superior, vá em **Project > Options**.
+2. Na barra lateral esquerda, navegue até **Building > Delphi Compiler > Compiling**.
+3. No topo da janela, em **Target**, certifique-se de selecionar a plataforma Android correta (ex: **All configurations - Android platform**).
+4. Agora, procure na lista central pela categoria **Key/Value options** (geralmente fica mais para o fim da lista).
+5. Lá você verá a opção **Include cleartext traffic text** (ou algo muito similar dependendo do update exato) para marcar como **True**.
+
+---
+
+### A Alternativa Infalível: Alterando o `AndroidManifest.template.xml`
+
+Se por algum motivo a opção acima não aparecer na sua tela, você pode resolver isso direto no arquivo de configuração que o Delphi usa para criar o app. É tiro e queda:
+
+1. Vá na pasta do seu projeto (`AppTeste`) pelo Windows Explorer.
+2. Procure por um arquivo chamado **`AndroidManifest.template.xml`** e abra-o com o Bloco de Notas (ou Notepad++).
+3. Procure pela tag `<application>` (ela fica um pouco abaixo do meio do arquivo).
+4. Dentro da tag `<application`, adicione o seguinte comando: `android:usesCleartextTraffic="true"`.
+
+O arquivo deve ficar parecido com isso:
+
+```xml
+<application android:persistent="%persistent%" 
+             android:restoreAnyVersion="%restoreAnyVersion%" 
+             android:label="%label%" 
+             android:debuggable="%debuggable%" 
+             android:largeHeap="%largeHeap%"
+             android:usesCleartextTraffic="true"  <-- ADICIONE ISSO AQUI
+             android:icon="%icon%" 
+             android:theme="%theme%">
+
+```
+
+5. Salve o arquivo, volte ao Delphi, dê um **Clean** no projeto e aperte **F9**.
+
+Isso vai forçar o compilador do Delphi 12.3 a avisar o seu Infinix SMART 9 HD que o aplicativo tem permissão para abrir links `http://` sem segurança.

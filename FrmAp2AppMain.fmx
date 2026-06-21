@@ -1,0 +1,212 @@
+object FrmAppMain: TFrmAppMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 485
+  ClientWidth = 635
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  FullScreen = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 3
+  object ScrollBox1: TScrollBox
+    Align = Client
+    Padding.Left = 3.000000000000000000
+    Padding.Top = 3.000000000000000000
+    Padding.Right = 3.000000000000000000
+    Padding.Bottom = 3.000000000000000000
+    Size.Width = 635.000000000000000000
+    Size.Height = 485.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    ShowSizeGrip = True
+    Viewport.Width = 635.000000000000000000
+    Viewport.Height = 485.000000000000000000
+    object Label1: TLabel
+      Align = Top
+      StyledSettings = [Family]
+      Position.X = 3.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 629.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claBrown
+      TextSettings.HorzAlign = Center
+      Text = 'Teste de URL'
+      TabOrder = 1
+      object SpeedButton1: TSpeedButton
+        Align = Right
+        StyledSettings = [Family, FontColor]
+        Position.X = 576.000000000000000000
+        Size.Width = 53.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'X'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.Trimming = None
+        OnClick = SpeedButton1Click
+      end
+      object FloatKeyAnimation1: TFloatKeyAnimation
+        Duration = 0.200000002980232200
+        Keys = <>
+        StartFromCurrent = False
+      end
+      object FloatAnimation1: TFloatAnimation
+        Duration = 0.200000002980232200
+        StartValue = 0.000000000000000000
+        StopValue = 0.000000000000000000
+      end
+    end
+    object TabControl1: TTabControl
+      Align = Client
+      Size.Width = 629.000000000000000000
+      Size.Height = 456.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 2
+      TabPosition = PlatformDefault
+      OnChange = TabControl1Change
+      Sizes = (
+        629s
+        407s
+        629s
+        407s
+        629s
+        407s)
+      object TabItem1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        TextSettings.Trimming = None
+        IsSelected = True
+        Size.Width = 209.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Busca.URL1'
+        ExplicitSize.cx = 69.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object MemoResultado: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          TextSettings.WordWrap = True
+          Align = Client
+          Padding.Left = 3.000000000000000000
+          Padding.Top = 3.000000000000000000
+          Padding.Right = 3.000000000000000000
+          Padding.Bottom = 3.000000000000000000
+          Size.Width = 629.000000000000000000
+          Size.Height = 304.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Viewport.Width = 621.000000000000000000
+          Viewport.Height = 296.000000000000000000
+        end
+        object Panel1: TPanel
+          Align = Top
+          Size.Width = 629.000000000000000000
+          Size.Height = 103.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object edtHttp: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 0
+            Text = 'https://brasilapi.com.br/api/'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claDarkblue
+            Size.Width = 629.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family]
+          end
+          object edtUrl: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 1
+            Text = 'cep/v1/29900740'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claDarkblue
+            Position.Y = 32.000000000000000000
+            Size.Width = 629.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family]
+          end
+          object Button1: TButton
+            Align = Top
+            Position.Y = 64.000000000000000000
+            Size.Width = 629.000000000000000000
+            Size.Height = 29.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Buscando Dados'
+            TextSettings.Trimming = None
+            OnClick = Button1Click
+          end
+        end
+      end
+      object TabItem2: TTabItem
+        CustomIcon = <
+          item
+          end>
+        TextSettings.Trimming = None
+        IsSelected = False
+        Size.Width = 209.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Navegador.google'
+        ExplicitSize.cx = 69.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object edtNavegador: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          Text = 'www.google.com.br'
+          Size.Width = 629.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          OnKeyDown = edtNavegadorKeyDown
+        end
+        object WebBrowser1: TWebBrowser
+          Align = Client
+          Size.Width = 629.000000000000000000
+          Size.Height = 375.000000000000000000
+          Size.PlatformDefault = False
+          WindowsEngine = IEOnly
+          OnDidFailLoadWithError = WebBrowser1DidFailLoadWithError
+        end
+      end
+      object TabItemImagem: TTabItem
+        CustomIcon = <
+          item
+          end>
+        TextSettings.Trimming = None
+        IsSelected = False
+        Size.Width = 211.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Imagem'
+        OnClick = TabItemImagemClick
+      end
+    end
+  end
+  object NetHTTPClient1: TNetHTTPClient
+    UserAgent = 'Embarcadero URI Client/1.0'
+    Left = 520
+    Top = 40
+  end
+end
